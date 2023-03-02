@@ -1,0 +1,11 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+10_Enterococcus_faecalis.fa	contig00004	19629	21125	+	lsa(A)_3	1-1497/1497	===============	0/0	100.00	100.00	resfinder	AY737526	lsa(A)	Lincomycin;Clindamycin;Dalfopristin;Pristinamycin_IIA;Virginiamycin_M
+10_Enterococcus_faecalis.fa	contig00024	4466	5893	+	fexA_1	1-1428/1428	===============	0/0	100.00	99.65	resfinder	AJ549214	fexA	Chloramphenicol;Florfenicol
+10_Enterococcus_faecalis.fa	contig00024	6581	8548	+	optrA_1	1-1968/1968	===============	0/0	100.00	100.00	resfinder	KP399637	optrA	Linezolid;Chloramphenicol;Florfenicol
+10_Enterococcus_faecalis.fa	contig00044	2060	2968	+	ant(6)-Ia_1	1-909/909	===============	0/0	100.00	100.00	resfinder	AF330699	ant(6)-Ia	Streptomycin
+10_Enterococcus_faecalis.fa	contig00044	3600	4394	+	aph(3')-III_1	1-795/795	===============	0/0	100.00	100.00	resfinder	M26832	aph(3')-III	Amikacin
+10_Enterococcus_faecalis.fa	contig00045	3993	5912	-	tet(M)_2	1-1920/1920	===============	0/0	100.00	98.12	resfinder	X90939	tet(M)	Doxycycline;Tetracycline;Minocycline
+10_Enterococcus_faecalis.fa	contig00046	346	993	-	cat(pC221)_1	1-648/648	===============	0/0	100.00	97.69	resfinder	X02529	cat(pC221)	Chloramphenicol
+10_Enterococcus_faecalis.fa	contig00046	4376	5138	+	erm(B)_18	1-762/762	========/======	1/1	100.00	99.21	resfinder	X66468	erm(B)	Erythromycin;Lincomycin;Clindamycin;Quinupristin;Pristinamycin_IA;Virginiamycin_S
+10_Enterococcus_faecalis.fa	contig00047	275	772	+	dfrG_1	1-498/498	===============	0/0	100.00	100.00	resfinder	AB205645	dfrG	Trimethoprim
+10_Enterococcus_faecalis.fa	contig00048	605	1981	-	tet(L)_2	1-1377/1377	===============	0/0	100.00	100.00	resfinder	M29725	tet(L)	Doxycycline;Tetracycline
