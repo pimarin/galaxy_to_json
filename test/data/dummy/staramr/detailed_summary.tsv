@@ -1,0 +1,17 @@
+Isolate ID	Data	Data Type	Predicted Phenotype	%Identity	%Overlap	HSP Length/Total Length	Contig	Start	End	Accession
+10_Enterococcus_faecalis_S17_L001	ST768 (efaecalis)	MLST								
+10_Enterococcus_faecalis_S17_L001	rep7a	Plasmid		100.0	100.0	939/939	contig00048	3276	4214	X92945
+10_Enterococcus_faecalis_S17_L001	rep9b	Plasmid		100.0	100.0	1014/1014	contig00023	3630	4643	CP002494
+10_Enterococcus_faecalis_S17_L001	repUS12	Plasmid		99.75	99.62	792/795	contig00051	918	127	AF181950
+10_Enterococcus_faecalis_S17_L001	repUS40	Plasmid		100.0	100.0	1158/1158	contig00026	21156	22313	KP399637
+10_Enterococcus_faecalis_S17_L001	repUS43	Plasmid		100.0	100.0	1206/1206	contig00040	9430	8225	CP003584
+10_Enterococcus_faecalis_S17_L001	ant(6)-Ia	Resistance	streptomycin	100.0	100.0	909/909	contig00046	4769	3861	AF330699
+10_Enterococcus_faecalis_S17_L001	aph(3')-III	Resistance	kanamycin, amikacin	100.0	100.0	795/795	contig00046	3229	2435	M26832
+10_Enterococcus_faecalis_S17_L001	cat(pC221)	Resistance	chloramphenicol	97.68	100.0	648/648	contig00048	4344	4991	X02529
+10_Enterococcus_faecalis_S17_L001	dfrG	Resistance	trimethoprim	100.0	100.0	498/498	contig00049	275	772	AB205645
+10_Enterococcus_faecalis_S17_L001	erm(B)	Resistance	erythromycin, azithromycin	99.21	100.13	763/762	contig00048	961	199	X66468
+10_Enterococcus_faecalis_S17_L001	fexA	Resistance	chloramphenicol	99.65	100.0	1428/1428	contig00026	4466	5893	AJ549214
+10_Enterococcus_faecalis_S17_L001	lsa(A)	Resistance	lincomycin	100.0	100.0	1497/1497	contig00004	148769	147273	AY737526
+10_Enterococcus_faecalis_S17_L001	optrA	Resistance	linezolid, chloramphenicol	100.0	100.0	1968/1968	contig00026	6581	8548	KP399637
+10_Enterococcus_faecalis_S17_L001	tet(L)	Resistance	tetracycline	100.0	100.0	1377/1377	contig00050	282	1658	M29725
+10_Enterococcus_faecalis_S17_L001	tet(M)	Resistance	tetracycline	98.12	100.0	1920/1920	contig00047	5912	3993	X90939

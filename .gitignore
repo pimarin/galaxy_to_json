@@ -1,0 +1,8 @@
+/ABRomicsonization.egg-info
+/build
+/.venv
+/.vscode
+/__pycache__
+
+# Ignore pytest files
+.coverage

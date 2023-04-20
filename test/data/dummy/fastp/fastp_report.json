@@ -1,0 +1,15 @@
+{"summary": {
+        "fastp_version": "0.23.2",
+        "sequencing": "paired end (301 cycles + 301 cycles)",
+        "before_filtering": {
+            "total_reads": 3489582,
+            "total_bases": 705053822,
+            "q20_bases": 672633294,
+            "q30_bases": 625189177,
+            "q20_rate": 0.954017,
+            "q30_rate": 0.886725,
+            "read1_mean_length": 201,
+            "read2_mean_length": 202,
+            "gc_content": 0.374995
+        }}
+}
