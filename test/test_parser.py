@@ -1,7 +1,7 @@
 import pytest
 import unittest
 from contextlib import contextmanager
-import ABRomicsonization
+import abromics_galaxy_json_extractor
 
 @contextmanager
 def not_raises(exception, msg):
@@ -19,7 +19,7 @@ class TestParserOptions(unittest.TestCase):
         input = f"test/data/dummy/{toolname}/{filename}"
 
         try:
-            parsed_report = ABRomicsonization.parse(
+            parsed_report = abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 toolname
@@ -34,7 +34,7 @@ class TestParserOptions(unittest.TestCase):
         input = f"test/data/dummy/{toolname}/{filename}"
 
         try:
-            parsed_report = ABRomicsonization.parse(
+            parsed_report = abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 toolname
@@ -49,7 +49,7 @@ class TestParserOptions(unittest.TestCase):
         input = f"test/data/dummy/{toolname}/{filename}"
 
         try:
-            parsed_report = ABRomicsonization.parse(
+            parsed_report = abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 tool=toolname
@@ -64,7 +64,7 @@ class TestParserOptions(unittest.TestCase):
         input = f"test/data/dummy/{toolname}/{filename}"
 
         try:
-            parsed_report = ABRomicsonization.parse(
+            parsed_report = abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 toolname
@@ -81,13 +81,13 @@ class TestParserOptions(unittest.TestCase):
         filename = "report.tsv"
         input = f"test/data/dummy/{toolname}/{filename}"
         try:
-            ABRomicsonization.parse(
+            abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 toolname
                 )
         except ValueError:
-            assert toolname not in ABRomicsonization._RequiredToolMetadata.keys()
+            assert toolname not in abromics_galaxy_json_extractor._RequiredToolMetadata.keys()
 
     def test_parser_error_unknowtool(self):
         toolname = "tooltest"
@@ -99,13 +99,13 @@ class TestParserOptions(unittest.TestCase):
         input = f"test/data/dummy/{toolname}/{filename}"
 
         try:
-            parsed_report = ABRomicsonization.parse(
+            parsed_report = abromics_galaxy_json_extractor.parse(
                 input,
                 metadata,
                 toolname
                 )
         except ValueError:
-            assert toolname not in ABRomicsonization._FormatToIterator.keys()
+            assert toolname not in abromics_galaxy_json_extractor._FormatToIterator.keys()
 
 
 if __name__ == '__main__':

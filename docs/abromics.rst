@@ -1,12 +1,11 @@
-Get-tool-list
-=============
 
-.. automodule:: ABRomicsonization.Interfaces
+.. _Commands:
 
-Usage
-----------
+********************************
+|:desktop_computer:| Basic usage
+********************************
 
 .. argparse::
-   :module: ABRomicsonization.Interfaces
-   :func: generate_tool_subparser
-   :prog: get-tool-list
+   :filename: main.py
+   :func: main
+   :prog: --help

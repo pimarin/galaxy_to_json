@@ -3,13 +3,13 @@
 **********************
 |:notebook:| Summarize
 **********************
-.. currentmodule:: ABRomicsonization.Summarize
+.. currentmodule:: summarize
 
 .. autosummary::
     :toctree: stubs
 
     ReportSummary
 
-.. automodule:: ABRomicsonization.Summarize
+.. automodule:: summarize
    :members:
    :noindex:

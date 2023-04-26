@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'abromicsonization'
+project = 'abromics-galaxy-json-extractor'
 copyright = '2023, abromics'
 author = 'abromics'
 
@@ -28,7 +28,7 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('../abromics_galaxy_json_extractor'))
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom

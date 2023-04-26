@@ -1,7 +1,7 @@
 import pytest
 import json
 from contextlib import contextmanager
-import ABRomicsonization
+import abromics_galaxy_json_extractor
 
 @contextmanager
 def not_raises(exception, msg):
@@ -25,7 +25,7 @@ def test_integronfinder2():
     with open(output_report, "r") as input_file:
         load_json = json.loads(input_file.read())
         
-    parsed_report = ABRomicsonization.parse(
+    parsed_report = abromics_galaxy_json_extractor.parse(
         input, 
         metadata, 
         toolname

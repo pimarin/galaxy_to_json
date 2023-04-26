@@ -1,7 +1,7 @@
-﻿ABRomicsonization.Summarize.ReportSummary
-=========================================
+﻿summarize.ReportSummary
+=======================
 
-.. currentmodule:: ABRomicsonization.Summarize
+.. currentmodule:: summarize
 
 .. autoclass:: ReportSummary
 

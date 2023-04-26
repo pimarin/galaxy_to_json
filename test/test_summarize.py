@@ -1,10 +1,9 @@
 import pytest
-import unittest
 import json
 from contextlib import contextmanager
 import glob
 import os
-import ABRomicsonization
+import abromics_galaxy_json_extractor
 
 @contextmanager
 def not_raises(exception, msg):
@@ -32,7 +31,7 @@ def test_summarize():
 
     with open(output_report_path, "r") as input_file:
         load_json = json.loads(input_file.read())
-    parsed_report = ABRomicsonization.Summarize.ReportSummary(
+    parsed_report = abromics_galaxy_json_extractor.summarize.ReportSummary(
         report_list=input_files,
         output_location=output_report_test_path
         )
@@ -43,44 +42,44 @@ def test_summarize():
     assert extracted_from_summary.items() == extracted_from_json.items()
 
 def test_output_path_summarize():
-    parsed_report = ABRomicsonization.Summarize.ReportSummary(
+    parsed_report = abromics_galaxy_json_extractor.summarize.ReportSummary(
         report_list=input_files,
         output_location=output_report)
     
     path_not_exist = f"{output_report}/no_file.json"
     parsed_report._output_location = path_not_exist
-    out_fh = parsed_report.__check_output_path__()
+    out_fh = parsed_report._check_output_path()
     assert out_fh.mode == "w"
     try:
-        parsed_report.__check_output_path__()
+        parsed_report._check_output_path()
     except ValueError:
         assert os.path.exists(parsed_report._output_location)        
     finally:
         parsed_report._overwrite = True
-        out_fh = parsed_report.__check_output_path__()
+        out_fh = parsed_report._check_output_path()
         assert out_fh.mode == "a"
     os.remove(out_fh.name)
     path_is_dir = output_report
     parsed_report._output_location = path_is_dir
     try:
-        parsed_report.__check_output_path__()
+        parsed_report._check_output_path()
     except FileExistsError:
         assert os.path.exists(parsed_report._output_location)
     finally:
         parsed_report._default_location = output_report_test_path
-        out_fh = parsed_report.__check_output_path__()
+        out_fh = parsed_report._check_output_path()
         assert os.path.exists(out_fh .name)
         os.remove(out_fh.name)
 
 def test_check_input_file():
     empty_file = f"{input_directory}/{toolname}/empty_file.json"
-    parsed_report = ABRomicsonization.Summarize.ReportSummary(
+    parsed_report = abromics_galaxy_json_extractor.summarize.ReportSummary(
         report_list=empty_file)
-    assert parsed_report.__check_input_files__(empty_file) == 0
+    assert parsed_report._check_input_files(empty_file) == 0
     assert os.stat(parsed_report._report_list).st_size == 0
     no_file_exist = f"{input_directory}/{toolname}/no_file.json"
     try:
-        parsed_report.__check_input_files__(no_file_exist)
+        parsed_report._check_input_files(no_file_exist)
     except FileNotFoundError:
         assert os.path.exists(no_file_exist) == False
     

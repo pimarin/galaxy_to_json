@@ -1,0 +1,2 @@
+[console_scripts]
+abromics = abromics_galaxy_json_extractor.main:main

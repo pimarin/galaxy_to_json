@@ -3,9 +3,9 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "abromicsonization"
+name = "abromics-galaxy-json-extractor"
 authors = [
-    {name = "abromcis", email = "abromcis@abromics.fr"},
+    {name = "abromics", email = "abromcis@abromics.fr"},
 ]
 description = "Convert galaxy outputs to json file"
 requires-python = ">=3.9"
@@ -29,7 +29,7 @@ dependencies = [
 dynamic = ["version", "readme"]
 
 [tool.setuptools.dynamic]
-version = {attr = "ABRomicsonization.__version__"}
+version = {attr = "abromics_galaxy_json_extractor.__version__"}
 readme = {file = ["README.md"]}
 
 [tool.setuptools]
@@ -37,10 +37,10 @@ zip-safe= true
 license-files = ["LICENSE*"]
 
 [project.scripts]
-abromics = "ABRomicsonization.abromics:main"
+abromics = "abromics_galaxy_json_extractor.main:main"
 
 [tool.poetry]
-name = "abromicsonization"
+name = "abromics_galaxy_json_extractor"
 version = "0.1.0"
 description = ""
 authors = ["abromics <abromics@abromics.fr>"]

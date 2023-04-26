@@ -1,7 +1,7 @@
-﻿ABRomicsonization.Interfaces.AbromicsResultIterator
-===================================================
+﻿interfaces.AbromicsResultIterator
+=================================
 
-.. currentmodule:: ABRomicsonization.Interfaces
+.. currentmodule:: interfaces
 
 .. autoclass:: AbromicsResultIterator
 

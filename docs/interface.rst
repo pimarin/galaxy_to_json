@@ -1,16 +1,20 @@
 
 .. _generic_interface:
 
-*************
-💻 Interfaces
-*************
-.. currentmodule:: ABRomicsonization.Interfaces
+********************************
+|:desktop_computer:| Interfaces
+********************************
+
+
+.. currentmodule:: interfaces
 
 .. autosummary::
     :toctree: stubs
 
-    AbromicsResultIterator
+     AbromicsResultIterator
+     generate_tool_subparser
+     generic_cli_interface
 
-.. automodule:: ABRomicsonization.Interfaces
-   :members:
+.. automodule:: interfaces
+   :members:  
    :noindex:
